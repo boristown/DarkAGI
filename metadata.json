@@ -1,0 +1,5 @@
+{
+  "name": "Dark AGI",
+  "description": "A browser-based autonomous agent that manipulates a virtual file system. Upload files, give instructions, and watch Gemini plan and execute file operations (Read, Write, Move, Delete) in real-time.",
+  "requestFramePermissions": []
+}
