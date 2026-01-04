@@ -1,5 +1,4 @@
 
-
 export interface VirtualFile {
   path: string; // Relative path, e.g., "src/components/Button.tsx"
   name: string;
@@ -66,6 +65,7 @@ export interface ChatMessage {
 
 export enum ModelId {
   GEMINI_3_PRO = 'gemini-3-pro-preview',
+  GEMINI_3_FLASH = 'gemini-3-flash-preview',
   GEMINI_2_5_FLASH = 'gemini-2.5-flash',
   GEMINI_2_5_FLASH_LITE = 'gemini-2.5-flash-lite',
   GEMINI_ROBOTICS = 'gemini-robotics-er-1.5-preview'
@@ -76,6 +76,7 @@ export type Language = 'zh' | 'en';
 export const UI_TEXT = {
   zh: {
     appName: '暗黑AGI',
+    brandSuffix: '&深度之眼',
     workspace: '工作区',
     files: '文件',
     noFiles: '暂无文件',
@@ -85,8 +86,8 @@ export const UI_TEXT = {
     executedActions: '执行动作',
     enterCommand: '输入指令...',
     initializeTitle: '暗黑AGI',
-    initializeDesc: '上传文件进行分析，执行代码，联网搜索最新信息，处理图像，深度解析视频内容，或进行数学推理。',
-    processing: 'AGI 正在思考...',
+    initializeDesc: '由 Gemini 3.0 驱动的通用智能体。支持多模态分析、自主编程、联网搜索及文件系统深度操作。',
+    processing: 'AGI 正在运行...',
     systemObservation: '系统观察',
     systemError: '系统错误',
     resetSession: '重置会话',
@@ -97,7 +98,7 @@ export const UI_TEXT = {
     previewError: '[加载预览出错]',
     download: '下载',
     close: '关闭',
-    version: 'V1.1',
+    version: 'V2.4',
     stop: '停止',
     stopped: '已中止',
     rawOutput: '原始输出日志',
@@ -105,6 +106,7 @@ export const UI_TEXT = {
   },
   en: {
     appName: 'Dark AGI',
+    brandSuffix: '&DeepShare',
     workspace: 'WORKSPACE',
     files: 'files',
     noFiles: 'No files.',
@@ -114,8 +116,8 @@ export const UI_TEXT = {
     executedActions: 'Executed Actions',
     enterCommand: 'Enter your command...',
     initializeTitle: 'Dark AGI',
-    initializeDesc: 'Upload files for analysis, execute code, search the web for real-time info, process images, deeply analyze video content, or perform math reasoning.',
-    processing: 'AGI IS PROCESSING...',
+    initializeDesc: 'Powered by Gemini 3.0. A multimodal autonomous agent capable of coding, searching, media processing, and complex reasoning.',
+    processing: 'AGI IS RUNNING...',
     systemObservation: 'SYSTEM_OBSERVATION',
     systemError: 'SYSTEM_ERROR',
     resetSession: 'Reset Session',
@@ -126,7 +128,7 @@ export const UI_TEXT = {
     previewError: '[Error loading preview]',
     download: 'Download',
     close: 'Close',
-    version: 'V1.1',
+    version: 'V2.4',
     stop: 'Stop',
     stopped: 'Stopped',
     rawOutput: 'Raw Output Log',
